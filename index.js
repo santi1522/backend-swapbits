@@ -16,5 +16,5 @@ app.post("/kyc/upload", upload.fields([
   res.json({ message: "Archivos recibidos correctamente" });
 });
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log("Servidor KYC activo en puerto", PORT));
